@@ -1,7 +1,7 @@
 import sys, time
 import sevseg
 
-secondLeft = 7265
+secondLeft = 100
 
 try:
     while True:
@@ -17,10 +17,10 @@ try:
         mDigits = sevseg.getSevSegStr(minutes, 2)
         mTopRow, mMiddleRow, mBottomRow = mDigits.splitlines()
 
-        sDigits = sevseg.getSevSegStr(hours, 2)
+        sDigits = sevseg.getSevSegStr(seconds, 2)
         sTopRow, sMiddleRow, sBottomRow = sDigits.splitlines()
 
-        print(f"{hTopRow} * {mTopRow} * {sTopRow}")
+        print(f"{hTopRow}   {mTopRow}   {sTopRow}")
         print(f"{hMiddleRow} * {mMiddleRow} * {sMiddleRow}")
         print(f"{hBottomRow} * {mBottomRow} * {sBottomRow}")
 
