@@ -55,4 +55,4 @@ while True:
     except Exception as exc:
         print("Invalid input. Enter somthing like '3d6' or '1d10+2'.")
         print("Input was invalid because: " + str(exc))
-        continue3d6
+        continue
